@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unistd.h>
 
 int main() {
     int n;
@@ -39,6 +39,8 @@ int main() {
         col = newCol;
 
         i++;
+        fflush(stdout);
+        sleep(1);
     }
 
 
